@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cartoon-mania/static/css/main.cd82a2cd.css",
+    "main.js": "/cartoon-mania/static/js/main.b0472a86.js",
+    "index.html": "/cartoon-mania/index.html",
+    "main.cd82a2cd.css.map": "/cartoon-mania/static/css/main.cd82a2cd.css.map",
+    "main.b0472a86.js.map": "/cartoon-mania/static/js/main.b0472a86.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd82a2cd.css",
+    "static/js/main.b0472a86.js"
+  ]
+}
