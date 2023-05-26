@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cartoon-mania/static/css/main.cd82a2cd.css",
-    "main.js": "/cartoon-mania/static/js/main.b0472a86.js",
+    "main.css": "/cartoon-mania/static/css/main.436cb10b.css",
+    "main.js": "/cartoon-mania/static/js/main.50315488.js",
     "index.html": "/cartoon-mania/index.html",
-    "main.cd82a2cd.css.map": "/cartoon-mania/static/css/main.cd82a2cd.css.map",
-    "main.b0472a86.js.map": "/cartoon-mania/static/js/main.b0472a86.js.map"
+    "main.436cb10b.css.map": "/cartoon-mania/static/css/main.436cb10b.css.map",
+    "main.50315488.js.map": "/cartoon-mania/static/js/main.50315488.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd82a2cd.css",
-    "static/js/main.b0472a86.js"
+    "static/css/main.436cb10b.css",
+    "static/js/main.50315488.js"
   ]
 }
