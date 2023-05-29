@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+:root {
+  --app-dark-bg: #1a1d28;
+  --app-green: #33ab4e;
+  --app-purple: #833cff;
+  --app-orange1: #FF7B02;
+  --app-dark-blue: #1a2649;
+  --app-lighter-blue: #506290;
+  --app-medium-blue: #283862;
+  --app-grey: #b4b3bd;
+  --app-red: #ff3c57;
+  --app-red-hover: #ff2846;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #1a1924;
+}
+
+.container {
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+}
+
+main {
+  height: calc(100vh - 60px);
+}
+
+
+/*-----------Header------------*/
+header {
+  background-color: #26293034;
+  border-bottom: 1px solid #ffffff48;
+}
+
+.hflex {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  line-height: 60px;
+}
+
+h1 {
+  color: var(--app-orange1);
+}
+
+.hflex nav ul {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.hflex nav ul li, .hflex nav ul li a {
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  list-style: none;
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.hflex nav ul li:hover {
+  background-color: var(--app-orange1);
+}
+
+
+/*-----------------------------------------------------*/
+/* Buttons                                             */
+/*-----------------------------------------------------*/
+
+.buttons {
+  margin: 50px 0;
+  text-align: right;
+}
+
+.sort {
+  min-width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid var(--app-orange1);
+  color: var(--app-orange1);
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 15px;
+  padding: 0 10px;
+}
+
+.add {
+  width: 100px;
+  height: 35px;
+  background-color: #09f;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #fff;
+}
+
+.add a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*-----------------------------------------------------*/
+/* Catalog                                             */
+/*-----------------------------------------------------*/
+
+.display {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 10px;
+  gap: 20px;
+}
+
+.post {
+  height: 300px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #1a1924;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.post img {
+  border-radius: 5px;
+  height: 245px;
+}
+
+.post h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  margin-top: 3px;
+}
+
+.info {
+  display: flex;
+  justify-content: left;
+}
+
+.info p {
+  color: rgb(255 255 255 / 0.4);
+
+}
+
+.info p:first-child {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.info p:first-child:hover {
+  white-space: normal;
+  overflow: visible;
+  margin-right: 5px;
+}
+
+.info p:nth-child(2) {
+  margin-top: -1px;
+  color: #ffffffa6;
+}
+
+.info p:nth-child(3) {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 5px;
+}
+
+.info p:nth-child(3):hover {
+  white-space: normal;
+  overflow: visible;
+}
+
+/*-----------------------------------------------------*/
+/* Details                                             */
+/*-----------------------------------------------------*/
+
+.charDetails {
+  margin-top: 100px;
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.charDetails img {
+  height: 400px;
+  width: 300px;
+  margin-right: 50px;
+  border-radius: 5px;
+} 
+
+.charDetails div h3 {
+  font-size: 32px;
+  color: #fff;
+}
+
+.charDetails div div p {
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.charDetails div div p span {
+  color: var(--app-orange1);
+  margin-right: 10px;
+}
+
+.charDetails div h4 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: var(--app-orange1);
+}
+
+.charDetails div p {
+  color: #fff;
+}
+
+/*-----------------------------------------------------*/
+/* Form                                                */
+/*-----------------------------------------------------*/
+
+.form {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 60px);
+  width: 400px;
+  text-align: center;
+}
+
+form {
+  height: 430px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+form h3 {
+  font-size: 28px;
+  padding-top: 10px;
+}
+
+form input[type=text] {
+  margin-inline: auto;
+  display: block;
+  height: 35px;
+  width: 80%;
+  background-color: #f1f2f3;
+  margin-bottom: 10px;
+  line-height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+form .first-child {
+  margin-top: 20px;
+}
+
+form input[type=submit] {
+  height: 35px;
+  width: 100px;
+  margin-top: 20px;
+  background-color: #09f;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+
+/*-----------------------------------------------------*/
+/* 404                                                 */
+/*-----------------------------------------------------*/
+
+.grid {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.grid div h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+.return {
+  margin-inline: block;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #09f;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.return a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.grid div p {
+  margin-top: -20px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/*-----------------------------------------------------*/
+/* Footer                                              */
+/*-----------------------------------------------------*/
+
+footer {
+  margin-top: 50px;
+  background-color: #26293034;
+  border-top: 1px solid #ffffff48;
+  height: 110px;
+}
+
+.fflex {
+  text-align: center;
+  color: #fff;
+}
+
+.fflex h1 {
+  margin-top: 3px;
+  font-size: 24px;
+  color: var(--app-orange1);
+}
+
+
+.fflex .copy {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.fflex .policy {
+  display: flex;
+  justify-content: center;
+}
+
+.fflex .policy p a {
+  color: #fff;
+  padding: 0 10px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.fflex .policy p a:hover {
+  color: var(--app-orange1);
+}
+
